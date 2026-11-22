@@ -1,0 +1,41 @@
+{
+  "model_name": "Logistic Regression",
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "numeric_features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "categorical_features": [
+    "cp"
+  ],
+  "binary_features": [
+    "sex"
+  ],
+  "target": "target",
+  "classes": {
+    "0": "No heart disease",
+    "1": "Heart disease"
+  },
+  "test_metrics": {
+    "Accuracy": 0.7833,
+    "Precision": 0.8,
+    "Recall": 0.7143,
+    "F1-score": 0.7547
+  },
+  "train_size": 237,
+  "test_size": 60,
+  "random_state": 42,
+  "sklearn_version": "1.9.1",
+  "selection_criterion": "F1-score (tie-breakers: recall, accuracy)"
+}
